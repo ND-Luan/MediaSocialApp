@@ -1,7 +1,8 @@
-export default FONTSIZE = {
-  default: 20,
-  sm: 15,
-  md: 25,
-  lg: 35,
-  xl: 45,
+const FONTSIZE = {
+  default: 15,
+  sm: 13,
+  md: 18,
+  lg: 23,
+  xl: 30,
 };
+export default FONTSIZE;

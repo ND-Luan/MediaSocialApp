@@ -6,8 +6,11 @@ const StackNavigation = () => {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="Tab" component={TabNavigation}    options={{ headerShown: false }}></Stack.Screen>
-       
+        <Stack.Screen
+          name="Tab"
+          component={TabNavigation}
+          options={{headerShown: false}}
+        />
       </Stack.Navigator>
     </NavigationContainer>
   );

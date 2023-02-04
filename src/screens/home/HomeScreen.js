@@ -1,19 +1,16 @@
 import Background from '@components/Background';
 import Text from '@components/Text';
+import COLOR from '@constants/COLOR';
 import FONTSIZE from '@constants/FONTSIZE';
-import {StyleSheet, View} from 'react-native';
+import { StyleSheet, View } from 'react-native';
 function HomeScreen() {
   return (
     <Background>
-      <Text fontSize={FONTSIZE.default} style={styles.text}>
+      <Text>
         Home!
       </Text>
     </Background>
   );
 }
-const styles = StyleSheet.create({
-  text: {
-    color: 'red',
-  },
-});
+const styles = StyleSheet.create({});
 export default HomeScreen;
