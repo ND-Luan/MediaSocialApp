@@ -1,22 +1,18 @@
-import Box from '@components/Box'
+import Button from '@components/Button'
+import Box from '@components/Button'
 import ItemList from '@components/ItemList'
 import Text from '@components/Text'
+import View from '@components/View'
 import COLOR from '@constants/COLOR'
 
-import { StyleSheet, View } from 'react-native'
+
 
 
 const Navbar = () => {
-    return <Box
-        height={50}
-        width={"100%"}
-        backgroundColor={COLOR.black}
-    >
-        <ItemList layout="row" >
-            <Text color={COLOR.white}>abc</Text>
-            <Text color={COLOR.white}>xyz</Text>
-        </ItemList>
-    </Box>
+    return <View layout="row" >
+ 
+    </View>
+
 }
 
 export default Navbar
