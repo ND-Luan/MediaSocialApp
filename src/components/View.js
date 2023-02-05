@@ -10,7 +10,10 @@ const View = ({
     width,
     layout,
     style,
-    children
+    children,
+    rounded = 12,
+    borderWidth,
+    borderColor
 }) => {
     return <RNView style={[
         {
@@ -21,7 +24,11 @@ const View = ({
             flexDirection: layout == "row" ? "row" : "column",
             justifyContent: justifyContent,
             alignItems: alignItems,
-            gap: gap
+            gap: gap,
+            borderRadius: rounded,
+            borderWidth: borderWidth,
+            borderColor: borderColor,
+            padding: 10
         }
         , style]}>
         {children}

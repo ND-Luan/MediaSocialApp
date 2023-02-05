@@ -1,1 +1,1 @@
-export {default as Article} from ''
+export {default as Article} from './Article'

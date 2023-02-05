@@ -7,7 +7,8 @@ const styles = StyleSheet.create({
   background: {
     flex: 1,
     backgroundColor: 'white',
-    padding: 10
+    padding: 10,
+    gap: 10
   },
 });
 export default Background;

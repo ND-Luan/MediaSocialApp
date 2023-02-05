@@ -11,8 +11,13 @@ import COLOR from '@constants/COLOR'
 
 
 const Navbar = () => {
-    return <View layout="row" >
-        <IconButton icon="twitter" backgroundColor={COLOR.yellow} colorIcon={COLOR.lightBlue} colorText={COLOR.black} onPress={() => console.log("press!")} >Login</IconButton>
+    return <View layout="row" width="100%" height={70} backgroundColor={COLOR.lightPink} gap={10} justifyContent='space-between' alignItems='center'>
+        <View backgroundColor={COLOR.yellow} width={100} height="100%"></View>
+        <View layout="row" gap={5}>
+            <View width={50} height={50} rounded={50} backgroundColor={COLOR.lightBlue}></View>
+            <View width={50} height={50} rounded={50} backgroundColor={COLOR.lightBlue}></View>
+        </View>
+
     </View>
 
 }

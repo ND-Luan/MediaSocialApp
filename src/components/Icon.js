@@ -1,19 +1,31 @@
 
-import Icon from 'react-native-vector-icons/FontAwesome5';
-import { Text } from 'react-native';
+import { TouchableOpacity } from 'react-native-gesture-handler';
+import Icon from 'react-native-vector-icons/Entypo';
 
 
 
-export const IconButton = ({ icon, sizeIcon = 20, backgroundColor, colorIcon, colorText, children, onPress }) => {
-    return <Icon.Button size={sizeIcon} name={icon} backgroundColor={backgroundColor} onPress={onPress} color={colorIcon} >
-        <Text
-            style={
-                {
-                    color: colorText
-                }
-            }
-        >{children}</Text>
-    </Icon.Button>
+
+
+export const IconButton = ({
+    name,
+    sizeIcon = 20,
+    backgroundColor,
+    colorIcon,
+    children,
+    onPress
+}) => {
+
+    
+    return <TouchableOpacity activeOpacity={1} onPress={onPress}>
+        <Icon
+            size={sizeIcon}
+            name={name}
+            backgroundColor={backgroundColor}
+            onPress={onPress}
+            color={colorIcon} >
+            {children}
+        </Icon>
+    </TouchableOpacity>
 }
 
 
