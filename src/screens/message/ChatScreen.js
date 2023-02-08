@@ -8,17 +8,21 @@ import Background from '@components/Background';
 const ChatScreen = () => {
   return (
     <Background
-      flex={1}
       backgroundColor={COLOR.lightPink}
-      rounded={0}
-      indexSticky={[-1]}>
-      <ChatCard />
-      <ChatCard reverse />
-      <ChatCard />
-      <ChatCard reverse />
-      <ChatCard />
-      <ChatCard reverse />
-
+      padding={0}
+      justifyContent="space-between">
+      <View padding={0}>
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+        <ChatCard />
+      </View>
       <TextInput />
     </Background>
   );

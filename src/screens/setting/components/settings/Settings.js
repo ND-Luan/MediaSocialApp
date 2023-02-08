@@ -8,7 +8,6 @@ const Settings = () => {
     <View
       layout="column"
       backgroundColor={COLOR.lightPink}
-      height={400}
       width="100%"
       flex={1}>
       <Text>Settings</Text>

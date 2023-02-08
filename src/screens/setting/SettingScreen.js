@@ -5,11 +5,9 @@ import {Settings} from './components/settings';
 
 function SettingScreen() {
   return (
-    <Background >
-      <View gap={10}>
-        <Auth />
-        <Settings />
-      </View>
+    <Background>
+      <Auth />
+      <Settings />
     </Background>
   );
 }
