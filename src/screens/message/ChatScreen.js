@@ -1,6 +1,9 @@
+import {SendIcon} from '@components/Icon';
 import React, {useState, useCallback, useEffect} from 'react';
-import {Bubble, GiftedChat} from 'react-native-gifted-chat';
-
+import {Bubble, GiftedChat, Send} from 'react-native-gifted-chat';
+import Button from '@components/View';
+import COLOR from '@constants/COLOR';
+import View from '@components/View';
 const ChatScreen = () => {
   const [messages, setMessages] = useState([]);
 
@@ -42,7 +45,15 @@ const ChatScreen = () => {
       />
     );
   };
-
+  const renderSend = props => {
+    return (
+      <Send {...props}>
+        <View>
+          <SendIcon  />
+        </View>
+      </Send>
+    );
+  };
   return (
     <GiftedChat
       messages={messages}
@@ -59,6 +70,7 @@ const ChatScreen = () => {
         },
       }}
       placeholder="Nhắn tin..."
+      renderSend={renderSend}
     />
   );
 };

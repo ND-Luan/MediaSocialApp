@@ -1,5 +1,6 @@
 import Entypo from 'react-native-vector-icons/Entypo';
-import FontAwsome from 'react-native-vector-icons/FontAwesome5';
+import FontAwesome from 'react-native-vector-icons/FontAwesome';
+import FontAwsome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
 const sizeIcon = 20;
@@ -27,6 +28,15 @@ const MessageOutLineIcon = () => {
 const EmojiIcon = () => {
   return <Entypo name="emoji-happy" size={sizeIcon}></Entypo>;
 };
+const SendIcon = () => {
+  return <Ionicons name="send" size={sizeIcon}></Ionicons>;
+};
+const UserIcon = () => {
+  return <FontAwesome name="user-circle" size={sizeIcon}></FontAwesome>;
+};
+const UserOutLineIcon = () => {
+  return <FontAwesome name="user-o" size={sizeIcon}></FontAwesome>;
+};
 export {
   HomeIcon,
   HomeOutLineIcon,
@@ -36,4 +46,7 @@ export {
   MessageIcon,
   MessageOutLineIcon,
   EmojiIcon,
+  SendIcon,
+  UserIcon,
+  UserOutLineIcon,
 };

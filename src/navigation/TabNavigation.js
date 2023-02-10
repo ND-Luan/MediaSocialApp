@@ -8,9 +8,12 @@ import {
   MessageOutLineIcon,
   SettingIcon,
   SettingOutLineIcon,
+  UserIcon,
+  UserOutLineIcon,
 } from '@components/Icon';
 import SettingScreen from '@screens/setting/SettingScreen';
 import MessageScreen from '@screens/message/MessageScreen';
+import UserScreen from '@screens/user/UserScreen';
 
 const Tab = createBottomTabNavigator();
 
@@ -22,7 +25,7 @@ const TabNavigation = () => {
         tabBarIcon: ({focused, size, color}) => {
           switch (route.name) {
             case 'Home':
-              if (focused) return <HomeIcon /> ;
+              if (focused) return <HomeIcon />;
               return <HomeOutLineIcon />;
             case 'Message':
               if (focused) return <MessageIcon />;
@@ -30,6 +33,9 @@ const TabNavigation = () => {
             case 'Settings':
               if (focused) return <SettingIcon />;
               return <SettingOutLineIcon />;
+            case 'User':
+              if (focused) return <UserIcon />;
+              return <UserOutLineIcon />;
           }
         },
       })}>
@@ -49,6 +55,11 @@ const TabNavigation = () => {
       <Tab.Screen
         name="Settings"
         component={SettingScreen}
+        options={{headerShown: false}}
+      />
+      <Tab.Screen
+        name="User"
+        component={UserScreen}
         options={{headerShown: false}}
       />
     </Tab.Navigator>
