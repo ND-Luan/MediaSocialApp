@@ -1,5 +1,5 @@
 import React, {useState, useCallback, useEffect} from 'react';
-import {GiftedChat} from 'react-native-gifted-chat';
+import {Bubble, GiftedChat} from 'react-native-gifted-chat';
 
 const ChatScreen = () => {
   const [messages, setMessages] = useState([]);
@@ -25,6 +25,24 @@ const ChatScreen = () => {
     );
   }, []);
 
+  const renderBubble = props => {
+    return (
+      <Bubble
+        {...props}
+        wrapperStyle={{
+          right: {
+            backgroundColor: '#F7F6CF',
+          },
+        }}
+        textStyle={{
+          right: {
+            color: '#28161C',
+          },
+        }}
+      />
+    );
+  };
+
   return (
     <GiftedChat
       messages={messages}
@@ -32,6 +50,15 @@ const ChatScreen = () => {
       user={{
         _id: 1,
       }}
+      alwaysShowSend
+      renderBubble={renderBubble}
+      messagesContainerStyle={{backgroundColor: '#F4CFDF'}}
+      timeTextStyle={{
+        right: {
+          color: 'black',
+        },
+      }}
+      placeholder="Nhắn tin..."
     />
   );
 };
