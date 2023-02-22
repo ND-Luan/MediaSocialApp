@@ -1,11 +1,18 @@
 import Button from '@components/Button';
 import Box from '@components/Button';
-import {IconButton, rocketIcon} from '@components/Icon';
+import {
+  AddIcon,
+  IconButton,
+  rocketIcon,
+  MessageNavbarIcon,
+} from '@components/Icon';
 
 import ItemList from '@components/ItemList';
 import Text from '@components/Text';
 import View from '@components/View';
 import COLOR from '@constants/COLOR';
+import CircleButton from './CircleButton';
+import Logo from './Logo';
 
 const Navbar = () => {
   return (
@@ -16,20 +23,15 @@ const Navbar = () => {
       backgroundColor={COLOR.lightPink}
       gap={10}
       justifyContent="space-between"
-      alignItems="center"
-    >
-      <View backgroundColor={COLOR.yellow} width={100} height="100%"/>
+      alignItems="center">
+      <Logo height="100%" width={150} resize="cover" />
       <View layout="row" gap={5}>
-        <View
-          width={50}
-          height={50}
-          rounded={50}
-          backgroundColor={COLOR.lightBlue}></View>
-        <View
-          width={50}
-          height={50}
-          rounded={50}
-          backgroundColor={COLOR.lightBlue}></View>
+        <CircleButton size={50}>
+          <AddIcon color={COLOR.yellow} />
+        </CircleButton>
+        <CircleButton size={50}>
+          <MessageNavbarIcon color={COLOR.yellow} />
+        </CircleButton>
       </View>
     </View>
   );

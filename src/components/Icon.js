@@ -3,6 +3,7 @@ import FontAwesome from 'react-native-vector-icons/FontAwesome';
 import FontAwsome5 from 'react-native-vector-icons/FontAwesome5';
 import Ionicons from 'react-native-vector-icons/Ionicons';
 import MaterialCommunityIcons from 'react-native-vector-icons/MaterialCommunityIcons';
+import AntDesign from 'react-native-vector-icons/AntDesign';
 const sizeIcon = 20;
 const HomeIcon = () => {
   return <Ionicons name="md-home" size={sizeIcon}></Ionicons>;
@@ -37,6 +38,14 @@ const UserIcon = () => {
 const UserOutLineIcon = () => {
   return <FontAwesome name="user-o" size={sizeIcon}></FontAwesome>;
 };
+const AddIcon = ({color}) => {
+  return (
+    <Ionicons name="add-circle-outline" size={50} color={color}></Ionicons>
+  );
+};
+const MessageNavbarIcon = ({color}) => {
+  return <AntDesign name="message1" size={45} color={color} />;
+};
 export {
   HomeIcon,
   HomeOutLineIcon,
@@ -49,4 +58,6 @@ export {
   SendIcon,
   UserIcon,
   UserOutLineIcon,
+  AddIcon,
+  MessageNavbarIcon,
 };

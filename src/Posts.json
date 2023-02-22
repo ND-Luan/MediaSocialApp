@@ -1,0 +1,20 @@
+[
+    {
+        "userId": 1,
+        "postId": 1,
+        "title": "sunt aut facere repellat provident",
+        "media": null
+    },
+    {
+        "userId": 1,
+        "postId": 2,
+        "title": "qui est esse",
+        "media": null
+    },
+    {
+        "userId": 1,
+        "postId": 3,
+        "title": "ea molestias quasi exercitationem",
+        "media": null
+    }
+]

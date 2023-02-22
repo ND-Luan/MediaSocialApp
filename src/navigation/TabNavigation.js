@@ -20,7 +20,7 @@ const Tab = createBottomTabNavigator();
 const TabNavigation = () => {
   return (
     <Tab.Navigator
-      initialRouteName="Settings"
+      initialRouteName="Home"
       screenOptions={({route}) => ({
         tabBarIcon: ({focused, size, color}) => {
           switch (route.name) {
